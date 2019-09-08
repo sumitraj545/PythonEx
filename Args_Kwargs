@@ -1,0 +1,9 @@
+def fun1(normal,*args,**kwargs):
+    for item in args:
+        print(item)
+    for key, value in kwargs.items():
+        print(f"Player : {key} | role : {value}")
+list1 = ["shyam","Ram","Amit","Ankur","Ashish"]
+nor = "How is The Josh"
+kwar = {"Sachin":"Batsman","Bumrah":"Bowler","Ms Dhoni":"Wicket Kepeer"}
+fun1(nor,*list1,**kwar)
