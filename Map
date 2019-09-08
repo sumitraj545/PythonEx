@@ -1,0 +1,7 @@
+num = ["1","2","3","4","5"]
+numb = list(map(int,num))
+print(numb)
+square = list(map(lambda x:x*x , numb))
+for i in square:
+    print(i)
+print(square)
