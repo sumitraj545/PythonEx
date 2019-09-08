@@ -1,0 +1,18 @@
+class dad:
+    basketball = 1
+class son(dad):
+    dance = 1
+    basketball = 5
+    def isdance(self):
+        return f"yes i am {self.dance} no of time"
+class grandson(son):
+    dance = 6
+
+    def isdance(self):
+        return f"yes i am dance superly {self.dance} no of time"
+
+dady = dad()
+sony = son()
+gaddy = grandson()
+
+print(gaddy.basketball)
