@@ -1,0 +1,4 @@
+f = open("sumit.txt","rt")
+read = f.readlines()
+print(read)
+f.close()
