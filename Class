@@ -1,0 +1,6 @@
+class student:
+    pass
+sumit = student()
+amit = student()
+sumit.name = "Sumit Singh"
+print(sumit.name)
