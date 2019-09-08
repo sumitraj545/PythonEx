@@ -1,0 +1,27 @@
+class Student:
+    leavess = 29
+    def __init__(self, aname, areg, aroll):
+        self.name = aname
+        self.reg = areg
+        self.sec = aroll
+    @classmethod
+    def leaves(cls, leav):
+        cls.leavess = leav
+
+    @classmethod
+    def dash(cls, str):
+        return
+
+
+sumit = Student("sumit", 11815602, 1818)
+sumit = Student("sumit",11815602,1818)
+Amit = Student("Amit-158620-1474")
+#rohan = Student()
+#
+# sumit.name = "Sumit Kumar Sinha"
+# sumit.reg = "11815602"
+# sumit.sec = "1818"
+print(sumit.name)
+print(sumit.reg)
+sumit.leaves(24)
+print(sumit.leavess)
