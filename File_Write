@@ -1,0 +1,4 @@
+f = open("sumit1.txt","a")
+b = f.write("How r U Sumit , ddvcxx I Am Fine...!!!")
+print(b)
+f.close()
