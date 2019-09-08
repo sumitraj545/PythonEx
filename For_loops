@@ -1,0 +1,4 @@
+items = ["sumit","Amit","Ankit",2,4,5,6,7,8,22,11,33,46,6,45,67,78]
+for x in items:
+    if str(x).isnumeric() and x >6:
+        print(x)
