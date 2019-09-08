@@ -1,0 +1,18 @@
+mySrr = "This Is The Python Universe"
+print(mySrr)
+print(len(mySrr))
+print(mySrr[0:])
+print(mySrr[0:8])
+print(mySrr[:9])
+print(mySrr[6:14:2])
+print(mySrr[-4:-2])
+print(mySrr.upper())
+print(mySrr.lower())
+print(mySrr.endswith("Universe"))
+print(mySrr.capitalize())
+print(mySrr.count("o"))
+print(mySrr.find("the"))
+print(mySrr.isalnum())
+print(mySrr.casefold())
+print(len(mySrr.split(" ")))
+
