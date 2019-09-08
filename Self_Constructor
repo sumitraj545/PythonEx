@@ -1,0 +1,21 @@
+class Student:
+    def __init__(self,aname,aroll,asect):
+        self.name = aname
+        self.roll = aroll
+        self.sect = asect
+
+    # def stud(self):
+    #     return f"This is {self.name} His roll No is {self.roll} and section is {self.sect}"
+
+sumit = Student("sumit Sinha", 11815602, 1810)
+# vikram = Student()
+#
+# sumit.name = "sumit Sinha"
+# sumit.roll = "11815602"
+# sumit.sect = "1810"
+#
+# vikram.name = "vikram Singh"
+# vikram.roll = "11825602"
+# vikram.sect = "1811"
+# print(sumit.stud())
+print(sumit.roll)
