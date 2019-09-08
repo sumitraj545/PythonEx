@@ -1,0 +1,22 @@
+mydict = {"Brand":"Hyundai","Model":"i20","Year":2022}
+print(mydict.keys())
+print(mydict.values())
+mydict["color"] = "Blue"
+print(mydict)
+print(len(mydict))
+mydict["Year"] = 2021
+print(mydict)
+mydict.pop("color")
+print(mydict)
+fiends = {"Sumit":"Samsung","Asmit":"Redme","Prince":"Realme","Vikram":{"Samsung":15000,"Redmi":10000,}}
+print(fiends["Vikram"]["Redmi"])
+del fiends["Asmit"]
+print(fiends)
+fiends.update({"Ankur":"Software"})
+print(fiends)
+dictionary = {"Mutable":"Change","Immutable":"No Change","Paradox":"Contradict","Compiler":"Converter"}
+word = input("Enter Word ")
+if word in dictionary:
+    print("This Meaning is :- ",dictionary[word])
+else:
+    print("Sorry This word Available in Dictionary...!")
