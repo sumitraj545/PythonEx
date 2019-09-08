@@ -1,0 +1,194 @@
+"""This IS Program In File Handling To Store The Data Of Helth Management System To Review His/Her Details Through File """
+                                                        #Time Module
+def time():
+    import datetime
+    return str(datetime.datetime.now())
+                                                #Write Exercise Module
+def ExerciseS():
+    n = input("\t Which Exercise You Are Complete ? ")
+    n1 = time()
+    f = open("SumitExe", "a")
+    a = f.write(n1)
+    a = f.write("\t")
+    a = f.write(n)
+    a = f.write("\n")
+    print("Thanku For using...!! \n Your Data is Successfully Loked...!!")
+    f.close()
+
+def ExerciseV():
+    n = input("\t Which Exercise You Are Complete ? ")
+    n1 = time()
+    f = open("VikramExe", "a")
+    a = f.write(n1)
+    a = f.write("\t")
+    a = f.write(n)
+    a = f.write("\n")
+    print("Thanku For using...!! \n Your Data is Successfully Loked...!!")
+    f.close()
+
+def ExerciseT():
+    n = input("\t Which Exercise You Are Complete ? ")
+    n1 = time()
+    f = open("TanmayExe", "a")
+    a = f.write(n1)
+    a = f.write("\t")
+    a = f.write(n)
+    a = f.write("\n")
+    print("Thanku For using...!! \n Your Data is Successfully Loked...!!")
+    f.close()
+                                                #Write Diet Module
+def DietS():
+    n = input("\t What You Are Eat Write Here : ")
+    n1 = time()
+    f = open("SumitDiet","a")
+    a = f.write(n1)
+    a = f.write("\t")
+    a = f.write(n)
+    a = f.write("\n")
+    print("Your Data is Successfully Loked...!!")
+    f.close()
+
+def DietV():
+    n = input("\t What You Are Eat Write Here : ")
+    n1 = time()
+    f = open("VikramDiet", "a")
+    a = f.write(n1)
+    a = f.write("\t")
+    a = f.write(n)
+    a = f.write("\n")
+    print("Your Data is Successfully Loked...!!")
+    f.close()
+
+def DietT():
+    n = input("\t What You Are Eat Write Here : ")
+    n1 = time()
+    f = open("TanmayDiet", "a")
+    a = f.write(n1)
+    a = f.write("\t")
+    a = f.write(n)
+    a = f.write("\n")
+    print("Your Data is Successfully Loked...!!")
+    f.close()
+                                                #Sumit Lock Details
+def sumit():
+    print("1 - Diet")
+    print("2 - Exercise")
+    sum = int(input("Choose Any One : "))
+    if sum == 1:
+        DietS()
+    else:
+        ExerciseS()
+                                                #Vikram Lock Details
+def Vikram():
+    print("1 - Diet")
+    print("2 - Exercise")
+    sum = int(input("Choose Any One : "))
+    if sum == 1:
+        DietV()
+    else:
+        ExerciseV()
+                                                #Tanmay Lock Details
+def Tanmay():
+    print("1 - Diet")
+    print("2 - Exercise")
+    sum = int(input("Choose Any One : "))
+    if sum == 1:
+        DietT()
+    else:
+        ExerciseT()
+                                                 #Lock Module
+def lock():
+    print("1 - Sumit")
+    print("2 - Vikram")
+    print("3 - Tanmay")
+    usr = int(input("Choose Any One : "))
+    if usr == 1:
+        sumit()
+    elif usr == 2:
+        Vikram()
+    elif usr == 3:
+        Tanmay()
+                                                 #Retrive Module
+def Retrive():
+    print("1 - Sumit")
+    print("2 - Vikram")
+    print("3 - Tanmay")
+    usr = int(input("Choose Any One : "))
+                                                 #Sumit Retrive Details
+    def sumitD():
+        f = open("SumitDiet", "rt")
+        a = f.read()
+        print(a)
+        f.close
+    def sumitE():
+        f = open("SumitExe", "rt")
+        a = f.read()
+        print(a)
+        f.close
+    def sumit1():
+        print("1 - Diet")
+        print("2 - Exercise")
+        sum = int(input("Choose Any One : "))
+        if sum ==1:
+            sumitD()
+        else:
+            sumitE()
+                                                #Vikram Retrive Details
+
+    def VikramD():
+        f = open("VikramDiet", "rt")
+        a = f.read()
+        print(a)
+        f.close
+
+    def VikramE():
+        f = open("VikramExe", "rt")
+        a = f.read()
+        print(a)
+        f.close
+
+    def Vikram1():
+        print("1 - Diet")
+        print("2 - Exercise")
+        sum = int(input("Choose Any One : "))
+        if sum == 1:
+            VikramD()
+        else:
+            VikramE()
+                                                #Tanmay Retrive Details
+    def TanmayD():
+        f = open("TanmayDiet", "rt")
+        a = f.read()
+        print(a)
+        f.close
+
+    def TanmayE():
+        f = open("TanmayExe", "rt")
+        a = f.read()
+        print(a)
+        f.close
+
+    def Tanmay1():
+        print("1 - Diet")
+        print("2 - Exercise")
+        sum = int(input("Choose Any One : "))
+        if sum == 1:
+            TanmayD()
+        else:
+            TanmayE()
+
+    if usr == 1:
+        sumit1()
+    elif usr == 2:
+        Vikram1()
+    elif usr == 3:
+        Tanmay1()
+                                                        #First Screen
+print("What You Want :- ")
+print("1 - Log")
+print("2 - Retrive")
+user = int(input("Please Choose Any One : "))
+if user == 1:
+    lock()
+elif user == 2:
+    Retrive()
