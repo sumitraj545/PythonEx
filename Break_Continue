@@ -1,0 +1,9 @@
+i = 1
+while(True): 
+    n = int(input("Enter A No : "))
+    if(n>100):
+        print("Congratulations No is Garter than 100")
+        break
+    else:
+        print("Try Again \n")
+        continue
