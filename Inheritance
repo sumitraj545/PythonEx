@@ -1,0 +1,10 @@
+class Abc:
+    def sum(self,x,y):
+        return x+y
+class Xyz(Abc):
+    def sub(self,x,y):
+        return x**y
+
+sum = Abc()
+sub = Xyz()
+print(sub.sub(x=5,y=9))
