@@ -1,0 +1,13 @@
+a = int(input("Enter First No :- "))
+b = int(input("Enter 2nd No :- "))
+if a==45 and b==3:
+    print("555")
+elif a==36 and b==9:
+    print("77")
+elif a==56 and b==4:
+    print("4")
+else:
+    print(a + b)
+    print(a * b)
+    print(a / b)
+
