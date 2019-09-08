@@ -1,0 +1,8 @@
+def function1(x,y):
+    """This Function used for two no average"""
+    average = (x+y)/2
+    print(average)
+    return average
+v = function1(10,20)
+print(v)
+print(function1.__doc__)
