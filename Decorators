@@ -1,0 +1,10 @@
+def dec1(func1):
+    def exec():
+        print("Now Executing")
+        func1()
+        print("Executed")
+    return exec
+@dec1
+def sumit():
+    print("Hello Sumit")
+sumit()
