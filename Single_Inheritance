@@ -1,0 +1,36 @@
+class Student:
+    leavess = 29
+    def __init__(self, aname, areg, aroll):
+        self.name = aname
+        self.reg = areg
+        self.sec = aroll
+    @classmethod
+    def leaves(cls, leav):
+        cls.leavess = leav
+
+    @classmethod
+    def dash(cls, str):
+        return
+class programmer(Student):
+    def __init__(self, aname, areg, aroll, alanguage):
+        self.name = aname
+        self.reg = areg
+        self.sec = aroll
+        self.language = alanguage
+    def prog(self):
+        return f"Programmer name{self.name}salary{self.reg}company{self.sec}"
+
+sumit = Student("sumit", 11815602, 1818)
+sumit = Student("sumit",11815602,1818)
+vikram = programmer("Vikram",5000,"Wipro","English")
+# Amit = Student("Amit-158620-1474")
+#rohan = Student()
+#
+# sumit.name = "Sumit Kumar Sinha"
+# sumit.reg = "11815602"
+# sumit.sec = "1818"
+# print(sumit.name)
+# print(sumit.reg)
+# sumit.leaves(24)
+# print(sumit.leavess)
+print(vikram.language)
