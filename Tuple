@@ -1,0 +1,7 @@
+mytuple = ("Sumit","Amit","Vikram","Aman","Ankit")
+print(mytuple)
+number = (5,4,6,3,7,3,9)
+x = number.index(9)
+print(x)
+y = number.count(3)
+print(y)
