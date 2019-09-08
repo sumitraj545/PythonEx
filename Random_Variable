@@ -1,0 +1,7 @@
+import random
+rand = random.randint(0,5)
+print(rand)
+num = int(random.random()*100)
+print(num)
+list = ["Apple","Orange","Banana"]
+print(random.choice(list))
