@@ -1,0 +1,22 @@
+i = 18
+j=0
+while(True):
+    n = int(input("Enter Your No: "))
+    j = j + 1
+    if j==6:
+        print("You Lose")
+        break
+    elif n<i:
+        print("Your No is Lesser")
+        print(5-j, "Chances left")
+        print("Try Again")
+        continue
+    elif n==i:
+        print("Congretulations YoU Win...!!")
+        print("You Take ",j," Chances...!!")
+        break
+    else:
+        print("Your No is Grater")
+        print(5-j, "Chances left")
+        print("Try Again")
+        continue
