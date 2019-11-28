@@ -1,0 +1,31 @@
+import pandas as pd
+import numpy as np
+nyc = pd.read_csv("311_Service_Requests_from_2010_to_Present.csv")
+#                             Basic data exploratory analysis 
+#                                  Explore data
+nyc.head()
+nyc
+nyc.info
+              #                                   droping all null columns to make it easy !
+nyc1 = nyc.drop(["School or Citywide Complaint","Vehicle Type","Taxi    Company Borough","Taxi Pick Up Location","Bridge Highway Name","Bridge Highway Direction","Road Ramp","Bridge Highway Segment","Garage Lot Name","Ferry Direction","Ferry Terminal Name"],axis=1)
+          nyc1.head()
+nyc1.describe()
+nyc1.index.values
+nyc1.columns.values
+nyc1.info
+#                                  Display the complaint type and city together
+nyc1.loc[:,['Complaint Type','City']]
+#                                 Find major complaint types
+major = nyc1.loc[:,"Complaint Type"]
+major
+major.unique()
+#                                       major complaints are Blocked Driveway  
+top = major.value_counts()
+top
+%matplotlib inline
+	#                              Plot a bar graph of count vs. complaint types
+major.value_counts().plot(kind='bar',title='count vs. complaint types')
+#                                Visualize the complaint types
+top.plot(kind='hist',title='Visualize the complaint types')
+#           Display the major complaint types and their count
+top.head(10).plot(kind='bar',title='The major complaint types and their count')
